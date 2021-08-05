@@ -12,6 +12,49 @@ An application that can configure the hostname of a Meraki device by obtaining n
     - [API Documentation](https://developer.cisco.com/meraki/api-v1/)
 * Webex Teams SDK
 
+# Screenshots
+![gui1](IMAGES/gui1.png)
+![gui2](IMAGES/gui2.png)
+![gui3](IMAGES/gui3.png)
+![gui4](IMAGES/gui4.png)
+
+## Flow
+
+![flow](IMAGES/flow.png)
+![design](IMAGES/design.png)
+
+## Installation
+
+1. Clone the repository:
+
+        $ git clone <link>
+
+2. (optional) Create a virtual environment and activate it (find instructions [here](https://docs.python.org/3/tutorial/venv.html))
+
+3. Update the `env_var.py` file. Note that the `config` variable is a Python dictionary:
+
+    ```python
+    config = {}
+
+    config['x_cisco_meraki_api_key'] = ""
+    config['webex_teams_acces_token'] = ""
+    config['webex_room_id'] = ""
+    config['device_name_filter'] = ""
+    config['device_username'] = ""
+    config['device_password'] = ""
+    config['port_number_to_uplink_switch'] = ""
+    ```
+
+    * `x_cisco_meraki_api_key` is the Meraki API key. In the section below is explained how to generate this key. 
+    * `webex_teams_acces_token` is the Webex Bot token. In the section below is explained how to generate this token. 
+    * `webex_room_id` is the Room ID of the space that you would like to send the messages to. In the section below is explained how to obtain this ID. 
+    * `device_name_filter` is the device name that you would to target. For example, in this PoV, we target the models starting with `MS120-8`.
+    * `device_username` is the username of the uplink switch.  
+    * `device_password` is the password of the uplink switch.  
+    * `port_number_to_uplink_switch` is the port number on the Meraki/downlink device. The port is connected to the uplink switch. In this PoV, the uplink switch is always connected to port number 9 to the downlink switch. 
+
+4. In a terminal, install the requirements with `pip install -r requirements.txt`. 
+
 ## Meraki API Key
 
 In order to use the Cisco Meraki API, you have to enable the API for your organization first. After having enabled API access, you can generate an API key. You can follow the following instructions on how to enable API access and how to generate an API key:
@@ -82,43 +125,6 @@ In order to parse CLI output, we use a parser called Genie. Genie integrates wel
 
 > https://developer.cisco.com/docs/genie-docs/
 
-## Flow
-
-![flow](IMAGES/flow.png)
-![design](IMAGES/design.png)
-
-## Installation
-
-1. Clone the repository:
-
-        $ git clone <link>
-
-2. (optional) Create a virtual environment and activate it (find instructions [here](https://docs.python.org/3/tutorial/venv.html))
-
-3. Update the `env_var.py` file. Note that the `config` variable is a Python dictionary:
-
-    ```python
-    config = {}
-
-    config['x_cisco_meraki_api_key'] = ""
-    config['webex_teams_acces_token'] = ""
-    config['webex_room_id'] = ""
-    config['device_name_filter'] = ""
-    config['device_username'] = ""
-    config['device_password'] = ""
-    config['port_number_to_uplink_switch'] = ""
-    ```
-
-    * `x_cisco_meraki_api_key` is the Meraki API key. In the section above is explained how to generate this key. 
-    * `webex_teams_acces_token` is the Webex Bot token. In the section above is explained how to generate this token. 
-    * `webex_room_id` is the Room ID of the space that you would like to send the messages to. In the section above is explained how to obtain this ID. 
-    * `device_name_filter` is the device name that you would to target. For example, in this PoV, we target the models starting with `MS120-8`.
-    * `device_username` is the username of the uplink switch.  
-    * `device_password` is the password of the uplink switch.  
-    * `port_number_to_uplink_switch` is the port number on the Meraki/downlink device. The port is connected to the uplink switch. In this PoV, the uplink switch is always connected to port number 9 to the downlink switch. 
-
-4. In a terminal, install the requirements with `pip install -r requirements.txt`. 
-
 
 ## Usage
 1. Run the flask application:
@@ -129,12 +135,6 @@ In order to parse CLI output, we use a parser called Genie. Genie integrates wel
 
         https://localhost:5000/
 
-
-# Screenshots
-![gui1](IMAGES/gui1.png)
-![gui2](IMAGES/gui2.png)
-![gui3](IMAGES/gui3.png)
-![gui4](IMAGES/gui4.png)
 
 ![/IMAGES/0image.png](IMAGES/0image.png)
 
