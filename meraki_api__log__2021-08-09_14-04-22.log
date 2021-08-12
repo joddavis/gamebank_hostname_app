@@ -1,0 +1,59 @@
+2021-08-09 14:04:22       meraki:     INFO > Meraki dashboard API session initialized with these parameters: {'version': '1.1.0', 'api_key': '************************************172f', 'base_url': 'https://api.meraki.com/api/v1', 'single_request_timeout': 60, 'certificate_path': '', 'requests_proxy': '', 'wait_on_rate_limit': True, 'nginx_429_retry_wait_time': 60, 'action_batch_retry_wait_time': 60, 'retry_4xx_error': False, 'retry_4xx_error_wait_time': 60, 'maximum_retries': 2, 'simulate': False, 'be_geo_id': None, 'caller': None}
+2021-08-09 14:04:33       meraki:    DEBUG > {'tags': ['organizations', 'configure', 'networks'], 'operation': 'getOrganizationNetworks', 'page': 1}
+2021-08-09 14:04:33       meraki:     INFO > GET https://api.meraki.com/api/v1/organizations/392999/networks
+2021-08-09 14:04:34       meraki:     INFO > organizations, getOrganizationNetworks; page 1 - 200 OK
+2021-08-09 14:04:34       meraki:    DEBUG > {'tags': ['networks', 'configure', 'devices'], 'operation': 'getNetworkDevices', 'method': 'GET', 'url': '/networks/L_669910444571372264/devices', 'params': None}
+2021-08-09 14:04:34       meraki:     INFO > GET https://api.meraki.com/api/v1/networks/L_669910444571372264/devices
+2021-08-09 14:04:35       meraki:     INFO > networks, getNetworkDevices - 200 OK
+2021-08-09 14:04:42       meraki:    DEBUG > {'tags': ['organizations', 'configure'], 'operation': 'getOrganizations', 'method': 'GET', 'url': '/organizations', 'params': None}
+2021-08-09 14:04:42       meraki:     INFO > GET https://api.meraki.com/api/v1/organizations
+2021-08-09 14:04:43       meraki:     INFO > GET https://n190.meraki.com/api/v1/organizations
+2021-08-09 14:04:43       meraki:     INFO > organizations, getOrganizations - 200 OK
+2021-08-09 14:04:47       meraki:    DEBUG > {'tags': ['organizations', 'configure'], 'operation': 'getOrganizations', 'method': 'GET', 'url': '/organizations', 'params': None}
+2021-08-09 14:04:47       meraki:     INFO > GET https://n190.meraki.com/api/v1/organizations
+2021-08-09 14:04:47       meraki:     INFO > organizations, getOrganizations - 200 OK
+2021-08-09 14:04:52       meraki:    DEBUG > {'tags': ['organizations', 'configure', 'networks'], 'operation': 'getOrganizationNetworks', 'page': 1}
+2021-08-09 14:04:52       meraki:     INFO > GET https://n190.meraki.com/api/v1/organizations/392999/networks
+2021-08-09 14:04:53       meraki:     INFO > organizations, getOrganizationNetworks; page 1 - 200 OK
+2021-08-09 14:04:58       meraki:    DEBUG > {'tags': ['devices', 'monitor', 'lldpCdp'], 'operation': 'getDeviceLldpCdp', 'method': 'GET', 'url': '/devices/Q2CX-595Y-ME83/lldpCdp', 'params': None}
+2021-08-09 14:04:58       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-595Y-ME83/lldpCdp
+2021-08-09 14:04:58       meraki:     INFO > devices, getDeviceLldpCdp - 200 OK
+2021-08-09 14:05:00       meraki:    DEBUG > {'tags': ['devices', 'configure'], 'operation': 'getDevice', 'method': 'GET', 'url': '/devices/Q2CX-595Y-ME83', 'params': None}
+2021-08-09 14:05:00       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-595Y-ME83
+2021-08-09 14:05:00       meraki:     INFO > devices, getDevice - 200 OK
+2021-08-09 14:05:00       meraki:    DEBUG > {'tags': ['devices', 'monitor', 'lldpCdp'], 'operation': 'getDeviceLldpCdp', 'method': 'GET', 'url': '/devices/Q2CX-L6H3-YLY7/lldpCdp', 'params': None}
+2021-08-09 14:05:00       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-L6H3-YLY7/lldpCdp
+2021-08-09 14:05:00       meraki:     INFO > devices, getDeviceLldpCdp - 200 OK
+2021-08-09 14:05:01       meraki:    DEBUG > {'tags': ['devices', 'configure'], 'operation': 'getDevice', 'method': 'GET', 'url': '/devices/Q2CX-L6H3-YLY7', 'params': None}
+2021-08-09 14:05:01       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-L6H3-YLY7
+2021-08-09 14:05:02       meraki:     INFO > devices, getDevice - 200 OK
+2021-08-09 14:05:02       meraki:    DEBUG > {'tags': ['devices', 'monitor', 'lldpCdp'], 'operation': 'getDeviceLldpCdp', 'method': 'GET', 'url': '/devices/Q2CX-55JU-UXQN/lldpCdp', 'params': None}
+2021-08-09 14:05:02       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-55JU-UXQN/lldpCdp
+2021-08-09 14:05:02       meraki:     INFO > devices, getDeviceLldpCdp - 200 OK
+2021-08-09 14:05:02       meraki:    DEBUG > {'tags': ['devices', 'configure'], 'operation': 'getDevice', 'method': 'GET', 'url': '/devices/Q2CX-55JU-UXQN', 'params': None}
+2021-08-09 14:05:02       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-55JU-UXQN
+2021-08-09 14:05:02       meraki:     INFO > devices, getDevice - 200 OK
+2021-08-09 14:05:04       meraki:    DEBUG > {'tags': ['networks', 'configure', 'devices'], 'operation': 'getNetworkDevices', 'method': 'GET', 'url': '/networks/L_669910444571372264/devices', 'params': None}
+2021-08-09 14:05:04       meraki:     INFO > GET https://n190.meraki.com/api/v1/networks/L_669910444571372264/devices
+2021-08-09 14:05:06       meraki:     INFO > networks, getNetworkDevices - 200 OK
+2021-08-09 14:06:45       meraki:    DEBUG > {'tags': ['devices', 'monitor', 'lldpCdp'], 'operation': 'getDeviceLldpCdp', 'method': 'GET', 'url': '/devices/Q2CX-595Y-ME83/lldpCdp', 'params': None}
+2021-08-09 14:06:45       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-595Y-ME83/lldpCdp
+2021-08-09 14:06:45       meraki:     INFO > devices, getDeviceLldpCdp - 200 OK
+2021-08-09 14:06:47       meraki:    DEBUG > {'tags': ['devices', 'configure'], 'operation': 'getDevice', 'method': 'GET', 'url': '/devices/Q2CX-595Y-ME83', 'params': None}
+2021-08-09 14:06:47       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-595Y-ME83
+2021-08-09 14:06:47       meraki:     INFO > devices, getDevice - 200 OK
+2021-08-09 14:06:47       meraki:    DEBUG > {'tags': ['devices', 'monitor', 'lldpCdp'], 'operation': 'getDeviceLldpCdp', 'method': 'GET', 'url': '/devices/Q2CX-L6H3-YLY7/lldpCdp', 'params': None}
+2021-08-09 14:06:47       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-L6H3-YLY7/lldpCdp
+2021-08-09 14:06:47       meraki:     INFO > devices, getDeviceLldpCdp - 200 OK
+2021-08-09 14:06:49       meraki:    DEBUG > {'tags': ['devices', 'configure'], 'operation': 'getDevice', 'method': 'GET', 'url': '/devices/Q2CX-L6H3-YLY7', 'params': None}
+2021-08-09 14:06:49       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-L6H3-YLY7
+2021-08-09 14:06:49       meraki:     INFO > devices, getDevice - 200 OK
+2021-08-09 14:06:49       meraki:    DEBUG > {'tags': ['devices', 'monitor', 'lldpCdp'], 'operation': 'getDeviceLldpCdp', 'method': 'GET', 'url': '/devices/Q2CX-55JU-UXQN/lldpCdp', 'params': None}
+2021-08-09 14:06:49       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-55JU-UXQN/lldpCdp
+2021-08-09 14:06:51       meraki:     INFO > devices, getDeviceLldpCdp - 200 OK
+2021-08-09 14:06:51       meraki:    DEBUG > {'tags': ['devices', 'configure'], 'operation': 'getDevice', 'method': 'GET', 'url': '/devices/Q2CX-55JU-UXQN', 'params': None}
+2021-08-09 14:06:51       meraki:     INFO > GET https://n190.meraki.com/api/v1/devices/Q2CX-55JU-UXQN
+2021-08-09 14:06:52       meraki:     INFO > devices, getDevice - 200 OK
+2021-08-09 14:06:53       meraki:    DEBUG > {'tags': ['networks', 'configure', 'devices'], 'operation': 'getNetworkDevices', 'method': 'GET', 'url': '/networks/L_669910444571372264/devices', 'params': None}
+2021-08-09 14:06:53       meraki:     INFO > GET https://n190.meraki.com/api/v1/networks/L_669910444571372264/devices
+2021-08-09 14:06:54       meraki:     INFO > networks, getNetworkDevices - 200 OK
